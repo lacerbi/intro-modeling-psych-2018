@@ -45,20 +45,6 @@ text(20,0.8,'''Right'' responses','HorizontalAlignment','Center','FontSize',font
 text(-20,0.2,'''Left'' responses','HorizontalAlignment','Center','FontSize',fontsize);
 text(-20,1.1,['n = ' num2str(size(data,1))],'HorizontalAlignment','Center','FontSize',fontsize);
 
-%     if plotbias
-%         % Plot bias line
-%         plot(mu*[1 1],[0 1],':b','LineWidth',1);
-%         if plotpsy; txt = 'bias'; else txt = 'decision threshold'; end
-%         text(mu-1,0.7,txt,'HorizontalAlignment','Center','FontSize',fontsize,'Rotation',90);
-%     end
-% 
-%     if plotpsy
-%         % Plot psychometric function
-%         p  = psy_like(theta,[xx,2*ones(numel(xx),1)]);
-%         plot(xx,p,'b-','LineWidth',4);  
-%     end
-
-
 %% Model fitting!
 
 % Fix random seed for reproducibility
